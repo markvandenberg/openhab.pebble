@@ -30,7 +30,14 @@ function createMappingMenu(itemName, item, mappings, success) {
     });
   }
   var menu = new UI.Menu({
+    status: {
+      color: 'white',
+      backgroundColor: 'orange'
+    },
+    highlightBackgroundColor: 'blue',
     sections: [{
+      backgroundColor: 'veryLightBlue',
+		  textColor: 'white',
       title: itemName,
       items: items
     }]
