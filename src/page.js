@@ -135,6 +135,8 @@ function createPageMenu(data, resetSitemap) {
         }
         // push the frame section
         sections.push({
+          backgroundColor: 'veryLightBlue',
+		      textColor: 'white',
           title: widget.label,
           items: items
         });
@@ -150,6 +152,11 @@ function createPageMenu(data, resetSitemap) {
     }
   }
   var menu = new UI.Menu({
+    status: {
+      color: 'white',
+      backgroundColor: 'orange'
+    },
+    highlightBackgroundColor: 'blue',
     sections: sections
   });
   menu.on('select', function(e) {
@@ -231,7 +238,14 @@ function showActionMenu(resetSitemap) {
   ];
   
   var actionMenu = new UI.Menu({
+    status: {
+      color: 'white',
+      backgroundColor: 'orange'
+    },
+    highlightBackgroundColor: 'blue',
     sections: [{
+      backgroundColor: 'veryLightBlue',
+		  textColor: 'white',
       title: 'Action List',
       items: actions
     }]

@@ -24,10 +24,14 @@ var exports = module.exports = {};
 
 function createWindow(itemName, item, min, max, step, isDimmer, success) {
   var setpointWindow = new UI.Window({
+    status: {
+      color: 'white',
+      backgroundColor: 'orange'
+    },
     action: {
 			up: 'images/action_icon_up.png',
 			down: 'images/action_icon_down.png',
-			backgroundColor: 'white'
+			backgroundColor: 'veryLightBlue'
 	  }
   });
   
